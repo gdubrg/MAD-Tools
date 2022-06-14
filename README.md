@@ -9,13 +9,16 @@ All tools are written in Python language.
 ### Image pre-processing
 The D-MAD classifier is trained on embeddings extracted with the DNN presented in 
 
-You can extract features through the ``extract_features.py`` script available in this repo. Follows inside comments
-for an easy use.<br>
+You can extract features through the ``extract_features.py`` script available in this repo. 
+Follow inside comments for an easy use.<br>
 Before, you have to install the following packages:
 - ``Mxnet`` (tested version 1.4.0 running on CPU)
 - ``OpenCV`` 4.4.0
 
 and other minor packages depending on your original setup (like ``tqdmm``, ...).
+
+Click [here](https://miatbiolab.csr.unibo.it/wp-content/uploads/downloads/model-0000.params) to download the ArcFace parameters. 
+For simplicity, put the file in the ``feature_extraction`` directory.
 
 ### Classifier
 - SVM with rbf kernel
