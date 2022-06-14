@@ -10,7 +10,7 @@ import sys
 
 # Path to ArcFace model and Face Detector (MTCNN) model
 path_model = './model,0000'
-path_mtcnn = './mtcnn-model'
+path_mtcnn = 'mtcnn-model'
 
 parser = argparse.ArgumentParser(description='face model test')
 parser.add_argument('--image-size', default='112,112', help='')

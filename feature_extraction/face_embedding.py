@@ -16,7 +16,7 @@ from sklearn.decomposition import PCA
 from time import sleep
 from easydict import EasyDict as edict
 from mtcnn_detector import MtcnnDetector
-sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'src', 'common'))
+sys.path.append(os.path.join(os.path.dirname(__file__), '../Models', 'src', 'common'))
 import face_image
 import face_preprocess
 
