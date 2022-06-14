@@ -24,11 +24,12 @@ For simplicity, put the file in the ``feature_extraction`` directory.
 - SVM with rbf kernel
 - Machine learning tool: ``scikit-learn 0.23.2``  
 - Trained on PMDB dataset; data not balanced (280 genuine, 1108 impostor)
+- Features **MUST** be subtracted! (probe - reference) 
 - Load the classifier file through the ``pickle`` package. 
 Example:
 ```
 import pickle
-with open(<path>, 'wb') as f:
+with open(<path>, 'r') as f:
     classifier = pickle.load(f)
 ...
 classifier.predict()
@@ -41,6 +42,7 @@ classifier.predict()
 | PMDB                  | Digital-Digital            | 0.55          | Criminal      | 0.0%           |[link](Models/svm_rbf_digital_cri.pkl)      |
 | PMDB                  | Digital-Digital            | 0.55          | Accomplice    | 0.0%           |[link](Models/svm_rbf_digital_acc.pkl)      |
 | PMDB                  | Digital-Digital            | 0.55          | Both          | 0.0%           |[link](Models/svm_rbf_digital_bot.pkl)      |
+| PMDB + MorphDB        | Digital-Digital            | 0.55          | Both          | -              |[link](Models/svm_rbf_digital_bot_2dat.pkl) |
 
 
 ### Printed and Scanned images
@@ -50,3 +52,4 @@ classifier.predict()
 | PMDB                 | P&S-P&S                    | 0.55          | Criminal      | 0.0%           |[link](Models/svm_rbf_pes_cri.pkl)          |
 | PMDB                 | P&S-P&S                    | 0.55          | Accomplice    | 0.0%           |[link](Models/svm_rbf_pes_acc.pkl)          |
 | PMDB                 | P&S-P&S                    | 0.55          | Both          | 0.0%           |[link](Models/svm_rbf_pes_bot.pkl)          |
+| PMDB + MorphDB       | P&S-P&S                    | 0.55          | Both          | -              |[link](Models/svm_rbf_pes_bot_2dat.pkl)     |
