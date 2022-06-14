@@ -36,17 +36,17 @@ classifier.predict()
     
 ### Digital images
 
-| Train         | Images          | Alpha         | Couples with  | EER on MorphDB | Model                                      |
-| ------------- | :-------------: |:-------------:|:-------------:|:--------------:|:------------------------------------------:|
-| PMDB          | Digital         | 0.55          | Criminal      | 0.0%           |[link](Models/svm_rbf_digital_cri.pkl)      |
-| PMDB          | Digital         | 0.55          | Accomplice    | 0.0%           |[link](Models/svm_rbf_digital_acc.pkl)      |
-| PMDB          | Digital         | 0.55          | Both          | 0.0%           |[link](Models/svm_rbf_digital_bot.pkl)      |
+| Train dataset         | Train-Test Images          | Alpha         | Couples with  | EER on MorphDB | Model                                      |
+| --------------------- | :------------------------: |:-------------:|:-------------:|:--------------:|:------------------------------------------:|
+| PMDB                  | Digital-Digital            | 0.55          | Criminal      | 0.0%           |[link](Models/svm_rbf_digital_cri.pkl)      |
+| PMDB                  | Digital-Digital            | 0.55          | Accomplice    | 0.0%           |[link](Models/svm_rbf_digital_acc.pkl)      |
+| PMDB                  | Digital-Digital            | 0.55          | Both          | 0.0%           |[link](Models/svm_rbf_digital_bot.pkl)      |
 
 
 ### Printed and Scanned images
 
-| Train         | Images          | Alpha         | Couples with  | EER on MorphDB | Model                                      |
-| ------------- | :-------------: |:-------------:|:-------------:|:--------------:|:------------------------------------------:|
-| PMDB          | P&S             | 0.55          | Criminal      | 0.0%           |[link](Models/svm_rbf_pes_cri.pkl)          |
-| PMDB          | P&S             | 0.55          | Accomplice    | 0.0%           |[link](Models/svm_rbf_pes_acc.pkl)          |
-| PMDB          | P&S             | 0.55          | Both          | 0.0%           |[link](Models/svm_rbf_pes_bot.pkl)          |
+| Train dataset        | Train-Test Images          | Alpha         | Couples with  | EER on MorphDB | Model                                      |
+| -------------------- | :------------------------: |:-------------:|:-------------:|:--------------:|:------------------------------------------:|
+| PMDB                 | P&S-P&S                    | 0.55          | Criminal      | 0.0%           |[link](Models/svm_rbf_pes_cri.pkl)          |
+| PMDB                 | P&S-P&S                    | 0.55          | Accomplice    | 0.0%           |[link](Models/svm_rbf_pes_acc.pkl)          |
+| PMDB                 | P&S-P&S                    | 0.55          | Both          | 0.0%           |[link](Models/svm_rbf_pes_bot.pkl)          |
